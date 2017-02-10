@@ -6,18 +6,22 @@
 //  Copyright © 2017 Enrique Ugalde. All rights reserved.
 //
 
+/*
+    Step 0: Configure Capabilities and enable app groups and add a new group with group.bundle_identifier
+*/
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

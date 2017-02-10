@@ -83,6 +83,7 @@
 		CD1B07861E4E12F6008255FC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		CD1B07881E4E12F6008255FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD1B078A1E4E12F6008255FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1B07981E4E1DF8008255FC /* Communication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Communication.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 		CD1B075C1E4E12F6008255FC /* Communication */ = {
 			isa = PBXGroup;
 			children = (
+				CD1B07981E4E1DF8008255FC /* Communication.entitlements */,
 				CD1B075D1E4E12F6008255FC /* AppDelegate.swift */,
 				CD1B075F1E4E12F6008255FC /* ViewController.swift */,
 				CD1B07611E4E12F6008255FC /* Main.storyboard */,
@@ -237,6 +239,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 67LUEC4D34;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CD1B076B1E4E12F6008255FC = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -528,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Communication/Communication.entitlements;
 				DEVELOPMENT_TEAM = 67LUEC4D34;
 				INFOPLIST_FILE = Communication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -541,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Communication/Communication.entitlements;
 				DEVELOPMENT_TEAM = 67LUEC4D34;
 				INFOPLIST_FILE = Communication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
