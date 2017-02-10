@@ -8,6 +8,7 @@
 
 /*
     Step 0: Configure Capabilities and enable app groups and add a new group with group.bundle_identifier
+    Step 1: Also configure the capabilities on the watchkit extension and add the same group
 */
 import UIKit
 

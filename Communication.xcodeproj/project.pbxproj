@@ -84,6 +84,7 @@
 		CD1B07881E4E12F6008255FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD1B078A1E4E12F6008255FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD1B07981E4E1DF8008255FC /* Communication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Communication.entitlements; sourceTree = "<group>"; };
+		CD1B07991E4E1EC4008255FC /* Communication WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Communication WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +152,7 @@
 		CD1B077F1E4E12F6008255FC /* Communication WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CD1B07991E4E1EC4008255FC /* Communication WatchKit Extension.entitlements */,
 				CD1B07821E4E12F6008255FC /* InterfaceController.swift */,
 				CD1B07841E4E12F6008255FC /* ExtensionDelegate.swift */,
 				CD1B07861E4E12F6008255FC /* NotificationController.swift */,
@@ -254,6 +256,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 67LUEC4D34;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -465,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Communication WatchKit Extension/Communication WatchKit Extension.entitlements";
 				DEVELOPMENT_TEAM = 67LUEC4D34;
 				INFOPLIST_FILE = "Communication WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -482,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Communication WatchKit Extension/Communication WatchKit Extension.entitlements";
 				DEVELOPMENT_TEAM = 67LUEC4D34;
 				INFOPLIST_FILE = "Communication WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
